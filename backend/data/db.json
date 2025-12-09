@@ -1,0 +1,384 @@
+{
+  "users": [
+    {
+      "id": "ayLz8V51R46A",
+      "email": "admin@example.com",
+      "passwordHash": "$2a$10$wR0Z9171S/C/IVdU5qEQFOn//2W6drtQnoJn.cOoBatp/cIv9f4Za",
+      "role": "admin",
+      "createdAt": "2025-12-02T15:24:58.239Z"
+    },
+    {
+      "id": "t8aWE98uBIkB",
+      "email": "user1@example.com",
+      "passwordHash": "$2a$10$sIaAOHqf1qarKbaH8YVlieiE9ybjpg4erUUyJ5Zp8P.RbwD0lzsre",
+      "role": "user",
+      "createdAt": "2025-12-03T15:31:54.667Z"
+    },
+    {
+      "id": "_FIT2kLWh5JD",
+      "email": "user2@example.com",
+      "passwordHash": "$2a$10$DnH54kxvDaNqa4kUKGUt3OG2JeS.Zzt8fGYlZ1RYDeR.GQ4Jl7ybK",
+      "role": "user",
+      "createdAt": "2025-12-03T15:31:54.748Z"
+    },
+    {
+      "id": "1mrVtNww_Gkb",
+      "email": "user3@example.com",
+      "passwordHash": "$2a$10$ivi3AD1fO5NrIK0B8nVhSuMBr5N.TKMJbGvBQksnVtY0PtFZcDK/e",
+      "role": "user",
+      "createdAt": "2025-12-03T15:31:54.820Z"
+    },
+    {
+      "id": "srYlTINA_7Dm",
+      "email": "user4@example.com",
+      "passwordHash": "$2a$10$3zOf2D3MDcVo48j9RkxPgeGgNv/8yGOeqVU.uquRTobmP6EGltBxq",
+      "role": "user",
+      "createdAt": "2025-12-03T15:31:54.898Z"
+    },
+    {
+      "id": "I_ppOv1UVrlG",
+      "email": "user5@example.com",
+      "passwordHash": "$2a$10$9VnOkY1BuunFD/D72YAyqepLpxgrXRdc6TD8vtWyQUiKLMndjcpq.",
+      "role": "user",
+      "createdAt": "2025-12-03T15:31:54.981Z"
+    },
+    {
+      "id": "22b5kUq3_3BA",
+      "email": "user6@example.com",
+      "passwordHash": "$2a$10$q5Eu9ouO.4raC2AxOxWV4.FjSdozYpD/Kb3HI4gVlsRx7p0KZRGlK",
+      "role": "user",
+      "createdAt": "2025-12-03T15:31:55.045Z"
+    },
+    {
+      "id": "gZDNEQ0WeQmG",
+      "email": "user7@example.com",
+      "passwordHash": "$2a$10$cFtFI/4TMtbaEUAAo0XJCee5iQl0pRMfT.T.1fR/etiL/VrkJnW.O",
+      "role": "user",
+      "createdAt": "2025-12-03T15:31:55.109Z"
+    },
+    {
+      "id": "CpOgZOrf8_Qo",
+      "email": "user8@example.com",
+      "passwordHash": "$2a$10$j2K.BY2GGXDGWjkmTFxKVuGMBoXdlqLvR5EEefwWRFER8YGAmOuoC",
+      "role": "user",
+      "createdAt": "2025-12-03T15:31:55.173Z"
+    },
+    {
+      "id": "1WcrXaxpi_d6",
+      "email": "user9@example.com",
+      "passwordHash": "$2a$10$2vG5xtlB6EyK/3RR88V1Iew41WomtEgAdmVX8RJUhenVnmDOlrx3i",
+      "role": "user",
+      "createdAt": "2025-12-03T15:31:55.254Z"
+    },
+    {
+      "id": "bcHx2LhTVt-p",
+      "email": "user10@example.com",
+      "passwordHash": "$2a$10$B0cZ/HDk6YFwOsBPMv8ce.p4hrinV5zWZQrC.UQNXh/StRnlStwBa",
+      "role": "user",
+      "createdAt": "2025-12-03T15:31:55.345Z"
+    },
+    {
+      "id": "BCOE1D5aCKW9",
+      "email": "test@test.com",
+      "passwordHash": "$2a$10$JEYTueNXbTSrkDIm7sAJ..UNN18oNfeDqzS4h7cXuJ.Cqm/Ubg2q2",
+      "role": "user",
+      "createdAt": "2025-12-04T15:19:04.432Z"
+    }
+  ],
+  "surveys": [
+    {
+      "id": "slP4lZ7vUgzx",
+      "question": "Яку версію Angular ви зараз використовуєте?",
+      "options": [
+        {
+          "id": "ngRZiSbglcH0",
+          "text": "v14"
+        },
+        {
+          "id": "HpU6--pH0T3d",
+          "text": "v15"
+        },
+        {
+          "id": "57mmjU3AkkH-",
+          "text": "v16"
+        },
+        {
+          "id": "xDaWIr72_Vgl",
+          "text": "v17+"
+        }
+      ],
+      "publicId": "gMIXLIrmBw",
+      "createdByUserId": "ayLz8V51R46A",
+      "createdAt": "2025-12-03T15:31:55.345Z"
+    },
+    {
+      "id": "0LCrzWRz28KE",
+      "question": "Який підхід до стану ви надаєте перевагу в Angular?",
+      "options": [
+        {
+          "id": "tQtThPdqIGzt",
+          "text": "RxJS services"
+        },
+        {
+          "id": "N5z9RQXMdDxF",
+          "text": "NgRx"
+        },
+        {
+          "id": "xYIR2dl33GI-",
+          "text": "Component Store"
+        },
+        {
+          "id": "hxxsHJ7g1oPN",
+          "text": "Signals"
+        }
+      ],
+      "publicId": "4188DCkdce",
+      "createdByUserId": "ayLz8V51R46A",
+      "createdAt": "2025-12-03T15:31:55.345Z"
+    },
+    {
+      "id": "X1qmNHrG_Jyj",
+      "question": "Який рендеринг ви використовуєте для продакшену?",
+      "options": [
+        {
+          "id": "gg3L70uuRZlP",
+          "text": "CSR"
+        },
+        {
+          "id": "pw7S5H3_9NAF",
+          "text": "SSR (Angular Universal)"
+        },
+        {
+          "id": "x3ekkaSkBR9G",
+          "text": "SSG/Prerender"
+        },
+        {
+          "id": "tMOr2xEgJn7d",
+          "text": "Hybrid"
+        }
+      ],
+      "publicId": "81jooJ7dvq",
+      "createdByUserId": "ayLz8V51R46A",
+      "createdAt": "2025-12-03T15:31:55.345Z"
+    }
+  ],
+  "votes": [
+    {
+      "id": "zY0l89_39iKS",
+      "surveyId": "slP4lZ7vUgzx",
+      "userId": "ayLz8V51R46A",
+      "optionId": "xDaWIr72_Vgl",
+      "createdAt": "2025-12-03T15:39:51.087Z"
+    },
+    {
+      "id": "wV0fLMUKvcro",
+      "surveyId": "slP4lZ7vUgzx",
+      "userId": "t8aWE98uBIkB",
+      "optionId": "HpU6--pH0T3d",
+      "createdAt": "2025-12-03T15:45:11.819Z"
+    },
+    {
+      "id": "hixWVmB3p79L",
+      "surveyId": "slP4lZ7vUgzx",
+      "userId": "_FIT2kLWh5JD",
+      "optionId": "HpU6--pH0T3d",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "YutPr4ebsC20",
+      "surveyId": "slP4lZ7vUgzx",
+      "userId": "1mrVtNww_Gkb",
+      "optionId": "57mmjU3AkkH-",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "PQsqidi98x-s",
+      "surveyId": "slP4lZ7vUgzx",
+      "userId": "srYlTINA_7Dm",
+      "optionId": "57mmjU3AkkH-",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "4k_GNr0FKNHu",
+      "surveyId": "slP4lZ7vUgzx",
+      "userId": "I_ppOv1UVrlG",
+      "optionId": "xDaWIr72_Vgl",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "IxUqg5HoozPp",
+      "surveyId": "slP4lZ7vUgzx",
+      "userId": "22b5kUq3_3BA",
+      "optionId": "ngRZiSbglcH0",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "AfRy6VvReoyY",
+      "surveyId": "slP4lZ7vUgzx",
+      "userId": "gZDNEQ0WeQmG",
+      "optionId": "HpU6--pH0T3d",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "PzyJSIu8x0ai",
+      "surveyId": "slP4lZ7vUgzx",
+      "userId": "CpOgZOrf8_Qo",
+      "optionId": "HpU6--pH0T3d",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "gRC3HYzG8KZx",
+      "surveyId": "slP4lZ7vUgzx",
+      "userId": "1WcrXaxpi_d6",
+      "optionId": "57mmjU3AkkH-",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "LZtA72GReLzB",
+      "surveyId": "slP4lZ7vUgzx",
+      "userId": "bcHx2LhTVt-p",
+      "optionId": "xDaWIr72_Vgl",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "49Wi6lfkMFb1",
+      "surveyId": "0LCrzWRz28KE",
+      "userId": "t8aWE98uBIkB",
+      "optionId": "N5z9RQXMdDxF",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "lWUX1KlsW6oL",
+      "surveyId": "0LCrzWRz28KE",
+      "userId": "_FIT2kLWh5JD",
+      "optionId": "xYIR2dl33GI-",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "iT1GBsAfneki",
+      "surveyId": "0LCrzWRz28KE",
+      "userId": "1mrVtNww_Gkb",
+      "optionId": "tQtThPdqIGzt",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "Nq7uJba5M43I",
+      "surveyId": "0LCrzWRz28KE",
+      "userId": "srYlTINA_7Dm",
+      "optionId": "hxxsHJ7g1oPN",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "WxOuvmaKL5D8",
+      "surveyId": "0LCrzWRz28KE",
+      "userId": "I_ppOv1UVrlG",
+      "optionId": "xYIR2dl33GI-",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "-ZS7E7f_sh9Y",
+      "surveyId": "0LCrzWRz28KE",
+      "userId": "22b5kUq3_3BA",
+      "optionId": "tQtThPdqIGzt",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "0X5aV9pJvKvi",
+      "surveyId": "0LCrzWRz28KE",
+      "userId": "gZDNEQ0WeQmG",
+      "optionId": "hxxsHJ7g1oPN",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "Hyqczo10WMb5",
+      "surveyId": "0LCrzWRz28KE",
+      "userId": "CpOgZOrf8_Qo",
+      "optionId": "tQtThPdqIGzt",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "nU1HSgwS_SDY",
+      "surveyId": "0LCrzWRz28KE",
+      "userId": "1WcrXaxpi_d6",
+      "optionId": "xYIR2dl33GI-",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "6izn6YLAvPIJ",
+      "surveyId": "0LCrzWRz28KE",
+      "userId": "bcHx2LhTVt-p",
+      "optionId": "xYIR2dl33GI-",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "N7koRVZe5F67",
+      "surveyId": "X1qmNHrG_Jyj",
+      "userId": "t8aWE98uBIkB",
+      "optionId": "pw7S5H3_9NAF",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "hzT0JT5wZpK1",
+      "surveyId": "X1qmNHrG_Jyj",
+      "userId": "_FIT2kLWh5JD",
+      "optionId": "gg3L70uuRZlP",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "THiZZ7o_MSII",
+      "surveyId": "X1qmNHrG_Jyj",
+      "userId": "1mrVtNww_Gkb",
+      "optionId": "gg3L70uuRZlP",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "4XQfrtEdhlwk",
+      "surveyId": "X1qmNHrG_Jyj",
+      "userId": "srYlTINA_7Dm",
+      "optionId": "tMOr2xEgJn7d",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "8fXc3E0BPxfD",
+      "surveyId": "X1qmNHrG_Jyj",
+      "userId": "I_ppOv1UVrlG",
+      "optionId": "tMOr2xEgJn7d",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "TYs8PjEnT6Lq",
+      "surveyId": "X1qmNHrG_Jyj",
+      "userId": "22b5kUq3_3BA",
+      "optionId": "x3ekkaSkBR9G",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "MJ4OSSzniHqe",
+      "surveyId": "X1qmNHrG_Jyj",
+      "userId": "gZDNEQ0WeQmG",
+      "optionId": "gg3L70uuRZlP",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "u5XM29D4Ftku",
+      "surveyId": "X1qmNHrG_Jyj",
+      "userId": "CpOgZOrf8_Qo",
+      "optionId": "x3ekkaSkBR9G",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "j3j4S-UMmo6q",
+      "surveyId": "X1qmNHrG_Jyj",
+      "userId": "1WcrXaxpi_d6",
+      "optionId": "tMOr2xEgJn7d",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    },
+    {
+      "id": "2ATYzIuCZZHv",
+      "surveyId": "X1qmNHrG_Jyj",
+      "userId": "bcHx2LhTVt-p",
+      "optionId": "x3ekkaSkBR9G",
+      "createdAt": "2025-12-03T15:45:11.820Z"
+    }
+  ]
+}

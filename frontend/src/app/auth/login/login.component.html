@@ -1,0 +1,17 @@
+<main class="container" role="main">
+  <h1>Вхід</h1>
+  @if (errorMsg()) { <p class="error" role="alert">{{ errorMsg() }}</p> }
+  <form (ngSubmit)="onSubmit()" [formGroup]="form" aria-describedby="login-help">
+    <p id="login-help" class="help">Введіть email та пароль щоб увійти.</p>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email" required />
+    </div>
+    <div>
+      <label for="password">Пароль</label>
+      <input id="password" type="password" formControlName="password" required minlength="8" />
+    </div>
+    <button type="submit" class="primary" [disabled]="submitting() || form.invalid">Увійти</button>
+  </form>
+  <p class="hint">Не маєте акаунт? <a routerLink="/register">Зареєструйтесь</a></p>
+</main>

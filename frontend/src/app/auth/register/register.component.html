@@ -1,0 +1,17 @@
+<main class="container" role="main">
+  <h1>Реєстрація</h1>
+  @if (errorMsg()) { <p class="error" role="alert">{{ errorMsg() }}</p> }
+  <form (ngSubmit)="onSubmit()" [formGroup]="form" aria-describedby="reg-help">
+    <p id="reg-help" class="help">Створіть акаунт, вкажіть email та пароль.</p>
+    <div>
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email" required />
+    </div>
+    <div>
+      <label for="password">Пароль</label>
+      <input id="password" type="password" formControlName="password" required minlength="8" />
+    </div>
+    <button type="submit" class="primary" [disabled]="submitting() || form.invalid">Зареєструватись</button>
+  </form>
+  <p class="hint">Вже маєте акаунт? <a routerLink="/login">Увійдіть</a></p>
+</main>

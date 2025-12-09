@@ -1,0 +1,73 @@
+  :host {
+    display: block;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: .5rem;
+    background: #2563eb;
+    color: #fff;
+  }
+
+  .site-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .75rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .brand {
+    font-weight: 700;
+    color: #111827;
+    text-decoration: none;
+  }
+
+  .nav {
+    margin-left: auto;
+    display: flex;
+    gap: .75rem;
+    align-items: center;
+  }
+
+  .nav-link {
+    color: #1f2937;
+    text-decoration: none;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .user {
+    color: #6b7280;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: .5rem;
+    background: #2563eb;
+    color: #fff;
+  }
