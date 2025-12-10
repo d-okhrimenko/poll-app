@@ -1,0 +1,13 @@
+<table>
+  @for(poll of pollList(); track poll.id) {
+  <tr>
+    <td>
+      <a routerLink="/admin/polls/{{poll.id}}">{{poll.question}}</a>
+    </td>
+    <td>
+      <a routerLink="/admin/polls/edit/{{poll.id}}">редагувати</a> |
+      <a routerLink="/admin/polls/delete/{{poll.id}}">видалити</a>
+    </td>
+  </tr>
+  }
+</table>
