@@ -1,6 +1,9 @@
 <header class="site-header" role="banner">
   <a class="brand" routerLink="/" aria-label="PollApp Home">{{ title() }}</a>
+  @if(isAdmin())
+  {
   <a class="nav-link" routerLink="/admin">Панель адміністрування</a>
+  }
   <nav class="nav" aria-label="Primary">
     @if (!isAuthenticated()) {
     <a routerLink="/login" class="nav-link">Вхід</a>

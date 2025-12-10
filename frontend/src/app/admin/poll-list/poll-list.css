@@ -1,8 +1,9 @@
 a {
   text-decoration: none;
   color: #1f2937;
+
 }
 
-table {
-  margin: 8px 14px;
+a:hover {
+  background-color: lightgray;
 }

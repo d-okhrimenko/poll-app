@@ -13,6 +13,7 @@ export class App {
   protected readonly title = signal('PollApp');
 
   isAuthenticated() { return this.auth.isAuthenticated(); }
+  isAdmin() { return this.auth.isAdmin(); }
   userEmail() { return this.auth.currentUser()?.email ?? ''; }
   logout() { this.auth.logout(); }
 }

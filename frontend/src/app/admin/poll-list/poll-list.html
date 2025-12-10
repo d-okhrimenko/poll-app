@@ -1,13 +1,19 @@
-<table>
-  @for(poll of pollList(); track poll.id) {
-  <tr>
-    <td>
-      <a routerLink="/admin/polls/{{poll.id}}">{{poll.question}}</a>
-    </td>
-    <td>
-      <a routerLink="/admin/polls/edit/{{poll.id}}">редагувати</a> |
-      <a routerLink="/admin/polls/delete/{{poll.id}}">видалити</a>
-    </td>
-  </tr>
-  }
-</table>
+<div class="container">
+  <button (click)="createNew()">Створити опитування</button>
+  <table>
+    @for(poll of pollList(); track poll.id) {
+    <tr>
+      <td>
+        <a routerLink="/admin/polls/{{poll.id}}">{{poll.question}}</a>
+      </td>
+      <td>
+        <a routerLink="/admin/polls/edit/{{poll.id}}">редагувати</a> |
+        <a routerLink="/admin/polls/delete/{{poll.id}}">видалити</a>
+      </td>
+    </tr>
+    }
+    @empty {
+    <p>Немає даних</p>
+    }
+  </table>
+</div>
