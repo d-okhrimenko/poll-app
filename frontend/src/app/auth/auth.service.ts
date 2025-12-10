@@ -8,10 +8,21 @@ import { environment } from '../../environments/environment';
 @Injectable({ providedIn: 'root' })
 export class AuthService {
   private readonly http = inject(HttpClient);
-  private static readonly STORAGE_KEY = 'auth_token';
+  private static readonly TOKEN_KEY = 'auth_token';
+  private static readonly USER_KEY = 'auth_user';
 
-  readonly token = signal<string | null>(typeof localStorage !== 'undefined' ? localStorage.getItem(AuthService.STORAGE_KEY) : null);
+  readonly token = signal<string | null>(null);
   readonly currentUser = signal<AuthUser | null>(null);
+
+  constructor() {
+    if (typeof localStorage !== 'undefined') {
+      let localToken = localStorage.getItem(AuthService.TOKEN_KEY);
+      let localUser = localStorage.getItem(AuthService.USER_KEY);
+
+      this.token.set(localToken);
+      this.currentUser.set(localUser ? JSON.parse(localUser) : {});
+    }
+  }
 
   isAuthenticated(): boolean { return !!this.token(); }
   role(): string | null { return this.currentUser()?.role ?? null; }
@@ -19,22 +30,29 @@ export class AuthService {
 
   login(email: string, password: string) {
     return this.http.post<AuthResponse>(`${environment.apiBaseUrl}/auth/login`, { email, password }).pipe(
-      tap((res) => { this.setToken(res.token); this.currentUser.set(res.user); })
+      tap((res) => { this.setToken(res.token); this.setUser(res.user); })
     );
   }
 
   register(email: string, password: string) {
     return this.http.post<AuthResponse>(`${environment.apiBaseUrl}/auth/register`, { email, password }).pipe(
-      tap((res) => { this.setToken(res.token); this.currentUser.set(res.user); })
+      tap((res) => { this.setToken(res.token); this.setUser(res.user); })
     );
   }
 
-  logout(): void { this.setToken(null); this.currentUser.set(null); }
+  logout(): void { this.setToken(null); this.setUser(null); }
 
   private setToken(token: string | null): void {
     this.token.set(token);
     if (typeof localStorage === 'undefined') return;
-    if (token) localStorage.setItem(AuthService.STORAGE_KEY, token);
-    else localStorage.removeItem(AuthService.STORAGE_KEY);
+    if (token) localStorage.setItem(AuthService.TOKEN_KEY, token);
+    else localStorage.removeItem(AuthService.TOKEN_KEY);
+  }
+
+  private setUser(user: AuthUser | null) {
+    this.currentUser.set(user);
+    if (typeof localStorage === 'undefined') return;
+    if (user) localStorage.setItem(AuthService.USER_KEY, JSON.stringify(user));
+    else localStorage.removeItem(AuthService.USER_KEY);
   }
 }
