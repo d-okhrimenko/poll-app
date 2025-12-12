@@ -1,2 +1,41 @@
-<p>poll-edit works!</p>
-<p>{{pollId()}}</p>
+<form (ngSubmit)="save()" [formGroup]="form">
+
+  <div class="form-group">
+    <label>Питання</label>
+    <textarea type="text" formControlName="question"></textarea>
+    <br>
+    @if(form.controls.question.touched && form.controls.question.hasError('required')){
+    <span class="error-label margin-left100">Питання обовязкове</span>
+    }
+  </div>
+
+  <div class="form-group" formArrayName="options">
+    <label>Варіанти</label>
+
+    <div class="options">
+      @for(group of form.controls.options.controls; track $index; let i = $index){
+
+      <div class="options-group" [formGroupName]="i">
+        <input type="text" formControlName="text" />
+        <button class="primary" type="button" (click)="removeOption(i)">x</button>
+      </div>
+
+      @let textCtrl = group.get('text');
+      @if (textCtrl?.touched && textCtrl?.hasError('minlength')){
+      <span class="error-label">Варіант відповіді повинен містити мінімум 3 символи</span>
+      }
+      @if (textCtrl?.touched && textCtrl?.hasError('required')) {
+      <span class="error-label">Варіант відповіді обовʼязковий</span>
+      }
+      }
+      <button type="button" (click)="addOption()">Додати</button>
+
+    </div>
+  </div>
+
+  @if(statusMessage() != '') {
+  <div class="msg" [class.success]="!hasError()" [class.error]="hasError()">{{statusMessage()}}</div>
+  }
+  <button class="primary">Зберегти</button>
+  <button type="button" (click)="cancel()">Скасувати</button>
+</form>

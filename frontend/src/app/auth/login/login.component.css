@@ -14,32 +14,7 @@
   color: #b91c1c;
 }
 
-label {
-  display: inline-block;
-  width: 100px;
-}
 
-input {
-  padding: .5rem;
-  border: 1px solid #e5e7eb;
-  border-radius: .375rem;
-}
-
-div {
-  margin-bottom: 8px;
-}
-
-.primary {
-  background: #2563eb;
-  color: white;
-  border: 0;
-  padding: .5rem .75rem;
-  border-radius: .375rem;
-}
-
-.primary:disabled {
-  opacity: .6;
-}
 
 .hint {
   margin-top: .5rem;

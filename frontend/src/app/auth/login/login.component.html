@@ -3,11 +3,11 @@
   @if (errorMsg()) { <p class="error" role="alert">{{ errorMsg() }}</p> }
   <form (ngSubmit)="onSubmit()" [formGroup]="form" aria-describedby="login-help">
     <p id="login-help" class="help">Введіть email та пароль щоб увійти.</p>
-    <div>
+    <div class="form-group">
       <label for="email">Email</label>
       <input id="email" type="email" formControlName="email" required />
     </div>
-    <div>
+    <div class="form-group">
       <label for="password">Пароль</label>
       <input id="password" type="password" formControlName="password" required minlength="8" />
     </div>
